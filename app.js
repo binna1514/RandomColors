@@ -5,13 +5,13 @@ let g = 0;
 let b = 0;
 
 button.addEventListener("click", () => {
-    h1.style.color = 'rgb(0, 0, 0)';
+    h1.style.color = 'rgb(255, 255, 255)';
     const newColor = makeRandColor();
     const isDark = r + g + b;
     document.body.style.backgroundColor = newColor;
     h1.innerText = newColor;
-    if (isDark < 200) {
-        h1.style.color = 'rgb(255, 255, 255)';
+    if (isDark > 550) {
+        h1.style.color = 'rgb(0,0,0)';
     }
 });
 
